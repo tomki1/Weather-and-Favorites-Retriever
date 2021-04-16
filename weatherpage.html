@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather and Favorites Retriever</title>
+  </head>
+  <body>
+
+	<form id="weather_send" method = "get">
+		<fieldset>
+	        <legend> Retrieve the weather for a city by entering either the city name or the zipcode. Please enter only one field in this section. </legend>
+	        <br />
+	        <fieldset>
+	        <label>City:
+	            <input type="text" name="city" id="city_input">
+	        </label>
+	   		 </fieldset>
+	   		<br /> 
+	        <fieldset>
+	        <label>Zipcode:
+	            <input type="number" name="zip" id="zip_input">
+	        </label>
+	   		</fieldset>
+	   		<br />
+	   		<button id="button_1" type="submit">Submit</button>
+        </fieldset>
+
+    </form>
+
+  <div>
+      <h2 id = "weather_results"> </h2>
+     	<ul>
+	 	<span id = "city"> </span> <br>
+	 	<span id = "temperature_current"> </span> 
+	 	<br />
+	 	<span id = "temperature_high"> </span> 
+	 	<br />
+	 	<span id = "temperature_low"> </span> 
+	 	<br />
+	 	<span id = "weather_condition"> </span> 
+	 	<br />
+	 	<span id = "humidity"> </span> 
+	 	<br />
+	    </ul>
+    </div>
+
+    <form id="personal_send" method = "post">
+		<fieldset>
+	        <legend> Please enter your favorite color.</legend>
+	        <br />
+	        <fieldset>
+	        <label>Color:
+	            <input type="text" name="color" id="color_input">
+	        </label>
+	   		 </fieldset>
+	   		<button id="button_2" type="submit">Submit</button>
+        </fieldset>
+
+    </form>
+
+    <div>
+	   <h2 id = "personal_results"> </h2>
+     	<ul>
+	 	<span id = "color"> </span> <br>
+    	</ul>
+
+	</div>
+    
+    <script src="weather.js"></script>
+  </body>
+</html>
